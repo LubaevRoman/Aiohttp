@@ -46,9 +46,9 @@ async def main():
         #********************************************
         response = await session.post(URL + '/user/',
             json={
-                'username': 'user_222',
-                'password': '23456789',
-                'email': 'u22@ya.ru'
+                'username': 'user1',
+                'password': '12345',
+                'email': '1@ya.ru'
             },
             params={}, headers={}
         )
@@ -58,9 +58,9 @@ async def main():
         #********************************************
         response = await session.patch(URL + '/user/1',
             json={
-                'username': 'new_name',
-                'password': '12345677',
-                'email': 'u112@ya.ru'
+                'username': 'user2',
+                'password': '123456',
+                'email': '2@ya.ru'
             },
             params={}, headers={}
         )
